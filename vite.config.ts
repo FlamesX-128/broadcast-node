@@ -5,6 +5,7 @@ import type { PluginOption } from 'vite';
 import { defineConfig } from 'vite';
 
 import mkcert from 'vite-plugin-mkcert';
+import { viteSingleFile } from "vite-plugin-singlefile"
 
 import path from 'path';
 
@@ -14,6 +15,7 @@ export default defineConfig({
         mkcert(),
         tailwindcss() as PluginOption,
         svelte(),
+        viteSingleFile(),
     ],
     resolve: {
         alias: {
@@ -21,7 +23,7 @@ export default defineConfig({
         }
     },
     server: {
-        allowedHosts: [], // @ts-ignore
-        https: false
+        allowedHosts: [],
+        https: {}
     }
 });

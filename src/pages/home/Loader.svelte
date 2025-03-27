@@ -1,9 +1,8 @@
 <script lang="ts">
     import Fadein from "@/components/animations/Fadein.svelte";
     import Loader from "@/components/animations/Loader.svelte";
-    import Aside from "@/components/Aside.svelte";
 
-    import Component from "@/pages/network/create/Component.svelte";
+    import Component from "@/pages/home/Component.svelte";
 
     import { Peer } from "peerjs";
 
@@ -21,17 +20,13 @@
     });
 </script>
 
-<div class="flex">
-    <Aside />
-
-    <Fadein class="flex flex-col w-full">
-        <Loader
-            class="flex flex-col h-full items-center justify-center w-full"
-            {Component}
-            {promise}
-        />
-    </Fadein>
-</div>
+<Fadein>
+    <Loader
+        class="flex h-screen items-center justify-center w-full"
+        {Component}
+        {promise}
+    />
+</Fadein>
 
 <style lang="postcss">
     @reference "@/app.css";

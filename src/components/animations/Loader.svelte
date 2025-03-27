@@ -35,7 +35,9 @@
 
 {#if showLoading}
     <div class={props.class ?? ""}>
-        <span transition:fade={{ duration: fadeDuration }}>Loading</span>
+        <span transition:fade={{ duration: fadeDuration }}>
+            <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>
+        </span>
     </div>
 {:else if resolvedProps}
     <Component {...resolvedProps} />
