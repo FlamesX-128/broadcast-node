@@ -1,0 +1,34 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "tailwindcss";
+
+.bg-neutral-940 {
+    background-color: oklch(0.16 0 0);
+}
+.bg-neutral-930 {
+    background-color: oklch(0.18 0 0);
+}
+.bg-neutral-920 {
+    background-color: oklch(0.2 0 0);
+}
+.bg-neutral-910 {
+    background-color: oklch(0.22 0 0);
+}
+
+/* */
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: noe; /* Safari y Chrome */
+}
+
+[aria-hidden="true"] {
+    display: none !important;
+}
+
+/**/
+@theme {
+    --color-zinc-940: #121214;
+}
