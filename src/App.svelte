@@ -2,9 +2,11 @@
     import Router from "svelte-spa-router";
 
     import Home from "@/pages/home/Loader.svelte";
+    import Deterministic from "@/pages/deterministic/Loader.svelte";
 
     const routes = {
         "/": Home,
+        "/room/:name": Deterministic,
     };
 </script>
 

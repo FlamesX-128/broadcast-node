@@ -23,6 +23,7 @@
         "vite-plugin-singlefile": "^2.2.0"
     },
     "dependencies": {
-        "peerjs": "^1.5.4"
+        "peerjs": "^1.5.4",
+        "uuid": "^11.1.0"
     }
 }
